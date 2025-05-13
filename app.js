@@ -11,7 +11,8 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
   console.log('Second middleware', req.method, req.url);
-  res.send("<h1>Welcome to the Express server</h1>");
+  res.send("<h1>Welcome to the Express server</h1><h2>this is a simple server that listens on port 3003</h2>"
+  );
 });
 
 
